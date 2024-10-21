@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<HTML lang="tr">
+<head>
+    <title>2.deneme</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0; 
+            box-sizing: border-box; 
+        }
+
+
+
+
+        .sidebar{
+            width: 200px;
+            height: 100vh;
+            background-color: rgb(0, 0, 0);
+            padding: 10px;
+            position: fixed;
+
+
+
+
+
+        }
+
+
+        .sidebar a{
+           text-decoration: none;
+           color: rgb(73, 92, 196);
+           padding: 15px;
+           margin-bottom: 70px;
+           display: block;
+           border-radius: 5px;
+    
+            
+
+
+
+
+
+        }
+        .sidebar a:hover {
+            background-color: rgb(87, 162, 165);
+            transform: scale(1);
+            
+            
+       
+        }
+        .content{
+            margin-left: 220px;
+            padding: 20px;
+
+
+
+
+
+        }
+
+
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+        }
+        img {
+            width: 150px;
+            border-radius:90%;
+        }
+        .projects {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .project-item {
+            width: 50%;
+            margin: 15px;
+            padding: 15px;
+            background-color: white;    
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        form {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        button {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        .social-links a {
+            margin: 0 10px;
+        }
+    </style>
+    
+
+</head>
+<body>
+    <div class="sidebar">
+        <h3 style="color: rgb(30, 26, 226);">Seçenekler</h3><br>
+        <a href="#home">Anasayfa</a>
+        <a href="#service">Hizmetler</a>
+        <a href="#contact">İletisim</a>
+        <a href="#about">Hakkımda</a>
+
+    </div>
+
+    <header id="home">
+        <img src="profil.jpg" alt="Profil Fotoğrafı">
+        <h1>Memedin'in Portfolyosu</h1>
+        <p>Web geliştirici olma yolculuğum</p>
+    </header>
+
+ 
+    <section id="about">
+        <h2>Hakkımda</h2>
+        <p>Mersin'de yaşıyorum ve web geliştirme konusunda ilerliyorum. Bu sayfa benim kişisel portfolyom.</p>
+
+
+    </section>
+
+
+
+    <h2 style="margin-left: -43%;">PROJELERIM</h2>
+    <section class="projects" id="service">
+        <div class="project-item">
+            <img src="proje1.jpg" alt="Proje 1">
+            <h2>Proje 1</h2>
+            <p>Web sitesinin tasarımını yaptım.</p>
+        </div>
+        <div class="project-item">
+            <img src="proje2.jpg" alt="Proje 2">
+            <h2>Proje 2</h2>
+            <p>JavaScript ile etkileşimli bir oyun geliştirdim.</p>
+        </div>
+        <div class="project-item">
+            <img src="proje3.jpg" alt="Proje 3">
+            <h2>Proje 3</h2>
+            <p>Responsive bir web sitesi kodladım.</p>
+        </div>  
+    </section>
+    <hr>
+    <h2>ILETISIM</h2>
+    <form name="contactForm" onsubmit="return validateForm()" style="padding-left: 10px;">
+        <label for="name">İsim:</label>
+        <input type="text" id="name" name="name">
+
+        <label for="email">E-posta:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="message">Mesajınız:</label>
+        <textarea id="message" name="message"></textarea>
+
+        <button type="submit">Gönder</button>
+        
+    </form>
+    <hr>
+    <section class="social-links" id="contact">
+        <h2>Beni Takip Edin</h2>
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+        <a href="https://github.com" target="_blank">GitHub</a>
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+    </section>
+
+
+    
+    <footer>
+        <p>© 2024 Memed. Tüm hakları saklıdır.</p>
+    </footer>
+
+
+    
+
+    <!--ACIKLAMA KISMI YAPTIM (kısa yol ctrl+ö)-->
+
+</body>
+
+    
+
+
+
+
+</html>
